@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лицейск News</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="/" class="logo">
+                    <img src="images/logo.svg" alt="Лицейск News" class="logo__img">
+                    <span class="logo__text">Лицейск News</span>
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="/" class="nav__link">Главная</a></li>
+                        <li><a href="articles.php" class="nav__link">Статьи</a></li>
+                        <li><a href="videos.php" class="nav__link">Видео</a></li>
+                        <li><a href="login.php" class="nav__link">Войти</a></li>
+                    </ul>
+                </nav>
+                <div class="header__controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                        <span class="theme-toggle__icon">🌙</span>
+                    </button>
+                    <button class="burger-menu" aria-label="Меню">
+                        <span class="burger-menu__line"></span>
+                        <span class="burger-menu__line"></span>
+                        <span class="burger-menu__line"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h1 class="section-title fade-in">Последние новости</h1>
+            <div class="news-grid" id="newsContainer">
+                <!-- Динамическое наполнение новостями -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">О нас</h3>
+                    <p>Лицейск News - ваш источник новостей о школьной экономической игре.</p>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Разделы</h3>
+                    <ul class="footer__links">
+                        <li class="footer__link"><a href="/">Главная</a></li>
+                        <li class="footer__link"><a href="articles.php">Статьи</a></li>
+                        <li class="footer__link"><a href="videos.php">Видео</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Контакты</h3>
+                    <ul class="footer__links">
+                        <li class="footer__link"><a href="mailto:info@liceysk-news.ru">info@liceysk-news.ru</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
